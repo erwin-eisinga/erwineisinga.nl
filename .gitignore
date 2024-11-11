@@ -8,9 +8,6 @@ vendor/
 Thumbs.db
 node_modules
 
-# Dist files
-build/*
-
 # VSCode
 .vscode/*
 !.vscode/extensions.json
