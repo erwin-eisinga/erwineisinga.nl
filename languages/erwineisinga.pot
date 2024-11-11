@@ -1,0 +1,167 @@
+# Copyright (C) 2024 Erwin Eisinga
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Erwin Eisinga 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/erwineisinga\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-11-11T17:54:54+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: erwineisinga\n"
+
+#. Theme Name of the theme
+#. Author of the theme
+#: style.css
+msgid "Erwin Eisinga"
+msgstr ""
+
+#. Theme URI of the theme
+#. Author URI of the theme
+#: style.css
+msgid "https://www.erwineisinga.nl/"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "WordPress theme for erwineisinga.nl"
+msgstr ""
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:20
+msgid "It looks like nothing was found at this location."
+msgstr ""
+
+#: 404.php:24
+msgid "Return to the homepage."
+msgstr ""
+
+#. translators: 1: blog name, 2: current year
+#: footer.php:19
+msgid "© %1$s %2$s"
+msgstr ""
+
+#: includes/post-types.php:32
+msgctxt "post type general name"
+msgid "Portfolio"
+msgstr ""
+
+#: includes/post-types.php:33
+msgctxt "post type singular name"
+msgid "Portfolio"
+msgstr ""
+
+#: includes/post-types.php:34
+#: includes/post-types.php:73
+msgctxt "project"
+msgid "Add new"
+msgstr ""
+
+#: includes/post-types.php:35
+#: includes/post-types.php:74
+msgid "Add new item"
+msgstr ""
+
+#: includes/post-types.php:36
+#: includes/post-types.php:75
+msgid "Edit item"
+msgstr ""
+
+#: includes/post-types.php:37
+#: includes/post-types.php:76
+msgid "New item"
+msgstr ""
+
+#: includes/post-types.php:38
+#: includes/post-types.php:77
+msgid "View item"
+msgstr ""
+
+#: includes/post-types.php:39
+#: includes/post-types.php:78
+msgid "Search items"
+msgstr ""
+
+#: includes/post-types.php:40
+#: includes/post-types.php:79
+msgid "No items found"
+msgstr ""
+
+#: includes/post-types.php:41
+#: includes/post-types.php:80
+msgid "No items found in trash"
+msgstr ""
+
+#: includes/post-types.php:42
+#: includes/post-types.php:81
+msgid "Parent item:"
+msgstr ""
+
+#: includes/post-types.php:43
+#: includes/post-types.php:82
+msgid "All items"
+msgstr ""
+
+#: includes/post-types.php:44
+#: includes/post-types.php:83
+msgid "Items archives"
+msgstr ""
+
+#: includes/post-types.php:45
+#: includes/post-types.php:84
+msgid "Insert into item"
+msgstr ""
+
+#: includes/post-types.php:46
+#: includes/post-types.php:85
+msgid "Uploaded to this item"
+msgstr ""
+
+#: includes/post-types.php:47
+msgid "Portfolio"
+msgstr ""
+
+#: includes/post-types.php:48
+#: includes/post-types.php:87
+msgid "Filter items list"
+msgstr ""
+
+#: includes/post-types.php:49
+#: includes/post-types.php:88
+msgid "Items list navigation"
+msgstr ""
+
+#: includes/post-types.php:50
+#: includes/post-types.php:89
+msgid "Items list"
+msgstr ""
+
+#: includes/post-types.php:71
+msgctxt "post type general name"
+msgid "Experiences"
+msgstr ""
+
+#: includes/post-types.php:72
+msgctxt "post type singular name"
+msgid "Experience"
+msgstr ""
+
+#: includes/post-types.php:86
+msgid "Experience"
+msgstr ""
+
+#: includes/template-functions.php:15
+#: includes/template-functions.php:16
+msgid "Site configuratie"
+msgstr ""
+
+#: template-parts/sections/header.php:114
+msgid "View my code"
+msgstr ""

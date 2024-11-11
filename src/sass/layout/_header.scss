@@ -1,0 +1,114 @@
+/*!
+ * Header
+ */
+.section-header {
+	background-image: url(/assets/images/pattern.png);
+	height: 100vh;
+	padding: 0;
+
+	> .container {
+		height: 100%;
+	}
+
+	.header__wrapper {
+		align-items: center;
+		display: flex;
+		height: 100%;
+	}
+
+	.header__links {
+		align-items: center;
+		display: flex;
+		gap: 10px;
+		margin-top: 60px;
+
+		// >= 992px
+		@media (min-width: 992px) {
+			gap: 20px;
+			margin-top: 100px;
+		}
+	}
+
+	.header__animation {
+		display: inline-block;
+		position: relative;
+
+		span {
+			color: var(--color-white);
+			display: inline-block;
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			text-align: center;
+			z-index: 1;
+
+			&.visible {
+				animation-duration: 0.6s;
+				animation-name: slide-in;
+				opacity: 1;
+			}
+
+			&.hidden {
+				animation-duration: 0.6s;
+				animation-name: slide-out;
+			}
+		}
+
+		.animation__wrapper {
+			display: inline-block;
+			margin: 0 40px;
+			width: 140px;
+
+			&::after {
+				background-color: var(--color-primary);
+				border-radius: 60px;
+				content: "";
+				height: 55px;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				left: 0;
+				translate: 0 -50%;
+
+				// >= 992px
+				@media (min-width: 992px) {
+					height: 75px;
+				}
+
+				// >= 1400px
+				@media (min-width: 1400px) {
+					height: 120px;
+				}
+			}
+
+			// >= 992px
+			@media (min-width: 992px) {
+				width: 280px;
+			}
+
+			// >= 1400px
+			@media (min-width: 1400px) {
+				width: 420px;
+			}
+		}
+	}
+
+	.header__actions {
+		position: absolute;
+		right: 20px;
+		bottom: 20px;
+
+		@media (min-width: 992px) {
+			right: 40px;
+			bottom: 40px;
+		}
+
+		.badge {
+			animation-delay: 4s;
+			animation-duration: 1.4s;
+			animation-name: bounce;
+		}
+	}
+}

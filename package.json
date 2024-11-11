@@ -1,0 +1,23 @@
+{
+	"name": "erwineisinga",
+	"version": "1.0.0",
+	"private": true,
+	"main": "index.js",
+	"scripts": {
+		"start": "wp-scripts start",
+		"build": "wp-scripts build"
+	},
+	"devDependencies": {
+		"@wordpress/eslint-plugin": "^21.4.0",
+		"@wordpress/scripts": "^30.4.0",
+		"@wordpress/stylelint-config": "^23.3.0",
+		"eslint": "^9.11.1",
+		"eslint-config-prettier": "^9.1.0",
+		"file-loader": "^6.2.0",
+		"prettier": "^3.3.3",
+		"stylelint": "16.9.0",
+		"stylelint-order": "^6.0.4",
+		"stylelint-scss": "6.7.0",
+		"swiper": "^11.1.14"
+	}
+}

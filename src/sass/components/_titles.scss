@@ -1,0 +1,89 @@
+/*!
+ * Titles
+ */
+.title {
+	font-size: 1.875rem;
+	font-weight: 700;
+	line-height: 2.5rem;
+
+	&::selection {
+		background-color: transparent;
+	}
+
+	// >= 992px
+	@media (min-width: 992px) {
+		font-size: 3.125rem;
+		line-height: 3.75rem;
+	}
+
+	// >= 1400px
+	@media (min-width: 1400px) {
+		font-size: 4.375rem;
+		line-height: 5rem;
+	}
+
+	// Tiny.
+	&.title--tiny {
+		font-size: 1.25rem;
+		line-height: 30px;
+
+		// >= 992px
+		@media (min-width: 992px) {
+			font-size: 1.5rem;
+			line-height: 2.125rem;
+		}
+	}
+
+	// Small.
+	&.title--small {
+		font-size: 1.5rem;
+		line-height: 2.125rem;
+
+		// >= 992px
+		@media (min-width: 992px) {
+			font-size: 2rem;
+			line-height: 2.625rem;
+		}
+
+		// >= 1400px
+		@media (min-width: 1400px) {
+			font-size: 2.5rem;
+			line-height: 3.125rem;
+		}
+	}
+
+	// Large.
+	&.title--large {
+		font-size: 2.5rem;
+		line-height: 50px;
+
+		// >= 992px
+		@media (min-width: 992px) {
+			font-size: 4.0625rem;
+			line-height: 4.6875rem;
+		}
+
+		// >= 1400px
+		@media (min-width: 1400px) {
+			font-size: 5.625rem;
+			line-height: 8.125rem;
+		}
+	}
+}
+
+.subtitle {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+
+	// >= 992px
+	@media (min-width: 992px) {
+		font-size: 1.25rem;
+		line-height: 1.875rem;
+	}
+
+	// >= 1400px
+	@media (min-width: 1400px) {
+		font-size: 1.375rem;
+		line-height: 2rem;
+	}
+}

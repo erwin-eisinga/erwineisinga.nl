@@ -1,0 +1,143 @@
+/*!
+ * Swiper
+ */
+.swiper {
+	overflow: visible;
+}
+
+// Slides.
+.swiper-slide {
+	max-width: 420px;
+	opacity: 0.4;
+	pointer-events: none;
+	transition: opacity var(--transition-ease-in);
+	width: 100%;
+
+	&:last-child {
+		// >= 992px
+		@media (min-width: 992px) {
+			margin-right: calc(100% - 420px);
+		}
+	}
+
+	&.swiper-slide-active {
+		opacity: 1;
+		pointer-events: all;
+
+		+ .swiper-slide {
+			opacity: 1;
+			pointer-events: all;
+		}
+	}
+
+	@media (hover: hover) {
+		&:hover {
+			&.swiper-slide-active {
+				.work {
+					.work__visual {
+						img {
+							transform: scale(1.05);
+						}
+
+						.icon {
+							background-color: var(--color-primary-dark);
+
+							svg {
+								transform: rotate(-135deg) translateY(5px);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Controls.
+.swiper-controls {
+	align-items: center;
+	display: flex;
+	gap: 30px;
+	justify-content: flex-end;
+	margin-top: 30px;
+
+	// >= 992px
+	@media (min-width: 992px) {
+		margin-top: 60px;
+	}
+}
+
+.swiper-indicator {
+	flex: 1;
+
+	// >= 1200px
+	@media (min-width: 1200px) {
+		flex: 0 0 485px;
+	}
+
+	// >= 1400px
+	@media (min-width: 1400px) {
+		flex: 0 0 705px;
+	}
+}
+
+.swiper-pagination {
+	height: 2px;
+	position: relative;
+	width: 100%;
+}
+
+.swiper-pagination-bullets {
+	display: flex;
+	margin: 0 auto;
+}
+
+.swiper-pagination-bullet {
+	background-color: var(--color-bg-dark);
+	flex: 1;
+	transition: background-color var(--transition-ease-in);;
+
+	&.swiper-pagination-bullet-active {
+		background-color: var(--color-primary);
+	}
+}
+
+.swiper-navigation {
+	align-items: center;
+	display: flex;
+	gap: 10px;
+
+	// >= 992px
+	@media (min-width: 992px) {
+		gap: 15px;
+	}
+}
+
+.swiper-button {
+	transition: opacity var(--transition-ease-in);
+
+	svg {
+		transition: transform var(--transition-ease-in);
+
+		path {
+			fill: var(--color-white);
+		}
+	}
+
+	&.swiper-button-prev {
+		transform: rotate(180deg);
+	}
+
+	&.swiper-button-disabled {
+		opacity: 0.5;
+		pointer-events: none;
+	}
+
+	@media (hover: hover) {
+		&:hover {
+			svg {
+				transform: rotate(-90deg) translateY(5px);
+			}
+		}
+	}
+}

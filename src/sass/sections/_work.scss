@@ -1,0 +1,71 @@
+/*!
+ * Work
+ */
+.work {
+	color: var(--color-black);
+	text-decoration: none;
+
+	.work__visual {
+		aspect-ratio: 4/3;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+
+		figure {
+			aspect-ratio: 4/3;
+			background-color: var(--color-blue);
+			mask-image: url(/assets/svgs/mask.svg);
+			pointer-events: none;
+			position: relative;
+			z-index: 1;
+		}
+
+		img {
+			aspect-ratio: 4/3;
+			height: auto;
+			object-fit: cover;
+			transition: transform var(--transition-ease-in);
+			width: 100%;
+		}
+
+		.icon {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+
+			svg {
+				transform: rotate(-135deg);
+				transition: transform var(--transition-ease-in);
+
+				path {
+					fill: var(--color-white);
+				}
+			}
+		}
+	}
+
+	.work__text {
+		display: flex;
+		flex-direction: column;
+		padding: 20px 10px 0;
+
+		p {
+			font-size: 18px;
+		}
+	}
+}
+
+.section-work {
+	h2.title {
+		margin-bottom: 10px;
+	}
+
+	.subtitle {
+		margin-bottom: 30px;
+
+		// >= 992px
+		@media (min-width: 992px) {
+			margin-bottom: 60px;
+		}
+	}
+}

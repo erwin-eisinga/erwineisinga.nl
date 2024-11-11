@@ -1,0 +1,22 @@
+/*!
+ * Badges
+ */
+.badge {
+	background-color: var(--color-primary);
+	border-radius: 20px;
+	color: var(--color-white);
+	display: inline-block;
+	font-size: 0.9375rem;
+	font-weight: 600;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+	text-decoration: none;
+	transition: background-color var(--transition-ease-in);
+
+	@media (hover: hover) {
+		&:hover {
+			background-color: var(--color-primary-dark);
+		}
+	}
+}

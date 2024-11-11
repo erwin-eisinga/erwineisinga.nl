@@ -1,0 +1,23 @@
+/**
+ * 404
+ */
+.section-not-found {
+	height: calc(100svh - 45px);
+	overflow: hidden;
+
+	.title {
+		margin-bottom: 20px;
+	}
+
+	a {
+		color: var(--color-black);
+		display: inline-block;
+		margin-top: 40px;
+
+		@media (hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

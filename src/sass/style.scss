@@ -1,0 +1,35 @@
+/*!
+ * Style
+ */
+
+/* Swiper */
+@use "swiper/css";
+@use "swiper/css/effect-fade";
+
+/* Base */
+@use "base/reset";
+@use "base/variables";
+@use "base/global";
+@use "base/animations";
+
+/* Components */
+@use "components/badges";
+@use "components/buttons";
+@use "components/icons";
+@use "components/links";
+@use "components/titles";
+
+/* Layout */
+@use "layout/container";
+@use "layout/footer";
+@use "layout/header";
+@use "layout/section";
+
+/* Sections */
+@use "sections/not-found";
+@use "sections/experience";
+@use "sections/work";
+@use "sections/contact";
+
+// /* Vendors */
+@use "vendors/swiper";

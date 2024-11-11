@@ -1,0 +1,68 @@
+/*!
+ * Buttons
+ */
+.button {
+	align-items: center;
+	background-color: var(--color-primary);
+	border: 0;
+	border-radius: 22.5px;
+	color: var(--color-white);
+	cursor: pointer;
+	display: inline-flex;
+	font-size: 1rem;
+	font-weight: 700;
+	height: 45px;
+	padding: 0 20px;
+	position: relative;
+	text-decoration: none;
+	transition: background-color var(--transition-ease-in);
+
+	// >= 992px
+	@media (min-width: 992px) {
+		border-radius: 30px;
+		font-size: 1.125rem;
+		height: 60px;
+		padding-right: 90px;
+		padding-left: 30px;
+	}
+
+	span {
+		align-items: center;
+		background-color: var(--color-white);
+		border-radius: 100%;
+		display: none;
+		height: 40px;
+		justify-content: center;
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		translate: 0 -50%;
+		width: 40px;
+
+		// >= 992px
+		@media (min-width: 992px) {
+			display: flex;
+		}
+
+		svg {
+			height: 14px;
+			transition: transform var(--transition-ease-in);
+
+			path {
+				fill: var(--color-black);
+			}
+		}
+	}
+
+	@media (hover: hover) {
+		&:hover {
+			background-color: var(--color-primary-dark);
+
+			span {
+				svg {
+					transform: translateY(3px);
+				}
+			}
+		}
+	}
+}

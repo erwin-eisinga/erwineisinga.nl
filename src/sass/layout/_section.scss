@@ -1,0 +1,12 @@
+/*!
+ * Section
+ */
+.section {
+	overflow: hidden;
+	padding: 40px 0;
+
+	// >= 1200px
+	@media (min-width: 1200px) {
+		padding: 120px 0;
+	}
+}

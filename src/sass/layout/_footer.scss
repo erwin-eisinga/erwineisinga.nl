@@ -1,0 +1,14 @@
+/**
+ * Footer
+ */
+.footer {
+	background-color: var(--color-primary);
+	padding: 10px 0;
+
+	span {
+		color: var(--color-white);
+		display: block;
+		font-size: 0.875rem;
+		text-align: right;
+	}
+}

@@ -1,0 +1,19 @@
+/*!
+ * Links
+ */
+.link {
+	color: var(--color-black);
+	font-size: 1rem;
+	text-decoration: underline;
+
+	// >= 992px
+	@media (min-width: 992px) {
+		font-size: 1.125rem;
+	}
+
+	@media (hover: hover) {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
