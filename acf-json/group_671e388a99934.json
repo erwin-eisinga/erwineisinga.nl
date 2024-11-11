@@ -41,6 +41,23 @@
             "append": ""
         },
         {
+            "key": "field_673254a618d3a",
+            "label": "LinkedIn",
+            "name": "global_general_linkedin",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "allow_in_bindings": 1
+        },
+        {
             "key": "field_6727ce3ac553c",
             "label": "Repository",
             "name": "global_general_repository",
@@ -77,5 +94,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1730661992
+    "modified": 1731351923
 }

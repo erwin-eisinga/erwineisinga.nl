@@ -9,6 +9,7 @@ $contact_title    = get_field( 'section_contact_title' );
 $contact_subtitle = get_field( 'section_contact_subtitle' );
 $contact_image    = get_field( 'section_contact_image' );
 $contact_email    = get_field( 'global_general_email', 'option' );
+$contact_linkedin = get_field( 'global_general_linkedin', 'option' );
 
 ?>
 
@@ -42,14 +43,14 @@ $contact_email    = get_field( 'global_general_email', 'option' );
 
 				<?php endif; ?>
 
-				<?php if ( ! empty( $contact_email ) ) : ?>
+				<?php if ( ! empty( $contact_linkedin ) ) : ?>
 
-					<a href="mailto:<?php echo esc_attr( $contact_email ); ?>" class="mail" target="_blank">
-						<span class="icon icon--small icon--at">
-							<?php echo file_get_contents( get_template_directory() . '/assets/svgs/icon-at.svg' ); ?>
+					<a href="<?php echo esc_attr( $contact_linkedin['url'] ); ?>" class="linkedin" target="<?php echo esc_attr( $contact_linkedin['target'] ); ?>">
+						<span class="icon icon--small icon--linkedin">
+							<?php echo file_get_contents( get_template_directory() . '/assets/svgs/icon-linkedin.svg' ); ?>
 						</span>
 
-						<?php echo esc_html( $contact_email ); ?>
+						<?php echo esc_html( $contact_linkedin['title'] ); ?>
 					</a>
 
 				<?php endif; ?>

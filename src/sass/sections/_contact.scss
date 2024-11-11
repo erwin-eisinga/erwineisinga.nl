@@ -107,7 +107,7 @@
 		}
 	}
 
-	.mail {
+	.linkedin {
 		align-items: center;
 		color: var(--color-black);
 		display: flex;
@@ -136,8 +136,8 @@
 			&:hover {
 				text-decoration: underline;
 
-				svg {
-					transform: rotate(180deg);
+				.icon {
+					background-color: var(--color-primary-dark);
 				}
 			}
 		}
